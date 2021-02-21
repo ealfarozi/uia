@@ -29,4 +29,16 @@ func main() {
 		fmt.Println(n)
 	}
 
+	//latihan
+	// var m, k = 0, 0
+	// for {
+	// 	m = m + k
+	// 	if m > 5000000000 {
+	// 		fmt.Println("loop terakhir: ", k)
+	// 		fmt.Println("jumlah nilai: ", m)
+	// 		break
+	// 	}
+	// 	k++
+	// }
+
 }

@@ -10,30 +10,36 @@ type Vertex struct {
 	X, Y float64
 }
 
-//get an absolute value from Vertex
+//Abs is the function to get an absolute value from Vertex
 func (v Vertex) Abs() float64 {
-	fmt.Println("scale in:", v)
+	fmt.Println("Abs:", v)
 	return math.Sqrt(v.X*v.X + v.Y*v.Y)
 }
 
-//Vertex modifiers - 1 - value receivers
+//Scale = Vertex modifiers - 1 - value receivers
+//(v Vertex) = inheritance
+//(f float64) = input parameter
+//after (f float64) could be output parameter/response, please define the type or the struct's name
 func (v Vertex) Scale(f float64) {
+	fmt.Println("Scale with value")
 	fmt.Println("before:", v)
 	v.X = v.X * f
 	v.Y = v.Y * f
 	fmt.Println("after:", v)
 }
 
-//Vertex modifiers - 2 - pointer receivers
-func (v *Vertex) Scale_2(f float64) {
+//Scale2 = Vertex modifiers - 2 - pointer receivers
+func (v *Vertex) Scale2(f float64) {
+	fmt.Println("Scale with pointer")
 	fmt.Println("before:", v)
 	v.X = v.X * f
 	v.Y = v.Y * f
 	fmt.Println("after:", v)
 }
 
-//Vertex modifiers - 3 - value receivers
-func (v Vertex) Scale_3(f float64) {
+//Scale3 = Vertex modifiers - 3 - value receivers
+func (v Vertex) Scale3(f float64) {
+	fmt.Println("Scale with value receiver")
 	fmt.Println("before:", v)
 	v.X = v.X * f
 	v.Y = v.Y * f
@@ -45,9 +51,8 @@ func main() {
 	v := Vertex{3, 4}
 	v.Scale(10)
 	fmt.Println(v.Abs())
-	v.Scale_2(10)
+	v.Scale2(10)
 	fmt.Println(v.Abs())
-	v.Scale_3(10)
+	v.Scale3(10)
 	fmt.Println(v.Abs())
-
 }

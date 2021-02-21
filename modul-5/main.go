@@ -54,15 +54,31 @@ func main() {
 	)
 
 	/*
-		a := 10
-		t := 10
-		if a > t {
-			fmt.Println("luas segitiganya adalah:", luas(a, t), ";Segitiga-nya Tinggi")
-		} else if a == t {
-			fmt.Println("luas segitiganya adalah:", luas(a, t), ";Segitiga-nya sama kaki")
-		} else {
-			fmt.Println("luas segitiganya adalah:", luas(a, t), ";Segitiga-nya Lebar")
+			a := 10
+			t := 10
+			if a > t {
+				fmt.Println("luas segitiganya adalah:", luas(a, t), ";Segitiga-nya Tinggi")
+			} else if a == t {
+				fmt.Println("luas segitiganya adalah:", luas(a, t), ";Segitiga-nya sama kaki")
+			} else {
+				fmt.Println("luas segitiganya adalah:", luas(a, t), ";Segitiga-nya Lebar")
+			}
+
+
+		c, genap, ganjil := 0, 0, 0
+		for {
+			if c%2 == 0 {
+				genap = genap + 1
+			} else {
+				ganjil = ganjil + 1
+			}
+			if c == 10000000000 {
+				fmt.Println("jumlah bilangan genap: ", genap)
+				fmt.Println("jumlah bilangan ganjil: ", ganjil)
+				break
+			}
+
+			c++
 		}
 	*/
-
 }

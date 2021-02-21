@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math"
+)
 
 func main() {
 
@@ -33,4 +36,11 @@ func main() {
 
 	r, s := "guava", 2
 	fmt.Println(r, s)
+
+	var x, y int = 3, 4
+	var t float64 = math.Sqrt(float64(x*x + y*y))
+	var z uint = uint(t)
+	fmt.Println(x, y, z)
+
+	//fmt.Println(float64(k) + m)
 }
