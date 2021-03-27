@@ -11,9 +11,11 @@ func swap(x, y string) (string, string) {
 
 func main() {
 	fmt.Println("Selamat belajar menggunakan Go!")
-	fmt.Println("Waktu saat ini adalah: ", time.Now())
+	fmt.Println("Waktu saat ini adalah:", time.Now())
 	//fmt.Println("Hello", "World!")
 
+	//init/deklarasi
 	a, b := swap("hello", "world")
+
 	fmt.Println(a, b)
 }
